@@ -29,12 +29,12 @@ SQL: SELECT `Fornavn`, `Etternavn`, `Klasse`, `Kjønn` FROM `elev` WHERE `Kjønn
 1. Joakim Fredriksen
 2. Jenny Gullaug
 
-SQL: SELECT `Fornavn` FROM `elev`;
+SQL: SELECT `Fornavn`, `Etternavn` FROM `elev` WHERE Fornavn LIKE 'J%'
 
 # oppgave e
 1. Martin Hjelle
 
-SQL: SELECT `Fornavn`, `Etternavn`, `Klasse` FROM `elev` WHERE `Klasse` = '2';
+SQL: SELECT `Fornavn`, `Etternavn`, `Klasse` FROM `elev` WHERE Fornavn LIKE 'M%';
 
 # oppgave f
 1. Thomas Hansen
@@ -44,8 +44,8 @@ SQL: SELECT `Fornavn`, `Etternavn`, `Hobby` FROM `elev` WHERE `Hobby` = 'Fotball
 
 # oppgave 3
 Tabell navn "Datamaskin"
-1. Merke
-2. Årsmodell
-3. Installasjon
-
+1. DatamaskinID
+2. Operativsystem
+3. Variant
+update
 # oppgave 4
