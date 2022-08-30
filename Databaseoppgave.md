@@ -47,5 +47,7 @@ Tabell navn "Datamaskin"
 1. DatamaskinID
 2. Operativsystem
 3. Variant
-update
+
 # oppgave 4
+![image](https://user-images.githubusercontent.com/111873484/187430319-4eed61b5-08ad-430f-a815-6299fb83a3c2.png)
+
