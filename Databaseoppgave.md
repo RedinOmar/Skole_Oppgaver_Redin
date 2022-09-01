@@ -69,3 +69,27 @@ Det er nødvendig å lage en foreign key fordi utvikleren må ha en klar oversik
 ![image](https://user-images.githubusercontent.com/111873484/187436092-9f4890f5-5f84-4b51-adc7-8a11011d5ff3.png)
 
 # oppgave 6
+SQL: SELECT elev.datamaskin, elev.Fornavn, elev.Etternavn, datamaskin.Variant
+FROM elev
+INNER JOIN datamaskin ON elev.datamaskin = datamaskin.DatamaskinID;
+
+Martin Hjelle - Yoga Slim 7 Pro Gen 6 (16" AMD)
+Hanna Ullevik - ThinkPad E15 Gen 2 (Intel)
+
+![image](https://user-images.githubusercontent.com/111873484/187904567-922a9760-caba-482c-a54d-70508c8ce18d.png)
+
+# oppgave 7
+SQL: SELECT fornavn
+FROM elev
+ORDER BY Fornavn DESC;
+
+![image](https://user-images.githubusercontent.com/111873484/187912076-0b831869-05e6-485d-a0a3-596521e79cea.png)
+
+# oppgave 8
+SQL: SELECT fornavn, Etternavn, Klasse
+FROM elev
+ORDER BY Klasse LIMIT 2;
+
+![image](https://user-images.githubusercontent.com/111873484/187913724-d8ed3c25-84d9-4aeb-80b0-d2e84173d284.png)
+
+# oppgave 9
