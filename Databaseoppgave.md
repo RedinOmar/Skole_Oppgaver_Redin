@@ -93,3 +93,19 @@ ORDER BY Klasse LIMIT 2;
 ![image](https://user-images.githubusercontent.com/111873484/187913724-d8ed3c25-84d9-4aeb-80b0-d2e84173d284.png)
 
 # oppgave 9
+SQL: UPDATE `elev`
+SET `Hobby` = 'Fotball'
+WHERE ElevID = '2';
+
+![image](https://user-images.githubusercontent.com/111873484/187943183-e1c497a8-a646-4770-a918-960b62d6b133.png)
+
+# oppgave 10
+SQL: INSERT INTO `elev` (`Fornavn`, `Etternavn`, `Klasse`, `Hobby`, `Kjønn`, `datamaskin`)
+VALUES ('Redin', 'Omar', '2', 'Gaming', 'G', '2');
+
+![image](https://user-images.githubusercontent.com/111873484/187946791-efc56197-b4c8-4cc7-bf6b-aedb68dd9c77.png)
+
+# oppgave 11
+SQL: DELETE FROM `elev` WHERE ElevID = '11';
+
+![image](https://user-images.githubusercontent.com/111873484/187947107-1bac2eb6-9b99-46f2-ad97-11f46ba4b3f5.png)
