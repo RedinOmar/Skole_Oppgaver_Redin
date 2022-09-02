@@ -109,3 +109,5 @@ VALUES ('Redin', 'Omar', '2', 'Gaming', 'G', '2');
 SQL: DELETE FROM `elev` WHERE ElevID = '11';
 
 ![image](https://user-images.githubusercontent.com/111873484/187947107-1bac2eb6-9b99-46f2-ad97-11f46ba4b3f5.png)
+
+# oppgave 12
