@@ -111,3 +111,14 @@ SQL: DELETE FROM `elev` WHERE ElevID = '11';
 ![image](https://user-images.githubusercontent.com/111873484/187947107-1bac2eb6-9b99-46f2-ad97-11f46ba4b3f5.png)
 
 # oppgave 12
+con.query ("UPDATE `elev` SET `Fornavn`= 'Redin', `Etternavn`= 'Omar', `Klasse` = 2, `Hobby` = 'Gaming', `Kjønn` = 'G', `datamaskin` = 1 WHERE ElevID = 1");
+
+![image](https://user-images.githubusercontent.com/111873484/188628171-3774598d-5e6c-40ab-8e1d-1691070b39cc.png)
+
+con.query("INSERT INTO `elev` (`Fornavn`, `Etternavn`, `Klasse`, `Hobby`, `Kjønn`, `datamaskin`) VALUES ('Joakim', 'Husefest', 3, 'Progamering' , 'G', 3)");
+
+![image](https://user-images.githubusercontent.com/111873484/188629209-47c0bcac-a568-42ae-b792-e97d8f012a35.png)
+
+con.query("DELETE FROM `elev` WHERE ElevID = 11");
+
+![image](https://user-images.githubusercontent.com/111873484/188630175-032ccc36-c9b6-4a1a-885a-350996733efb.png)
