@@ -64,4 +64,6 @@ vanskelighets-grad.
 
 #### HTML, CSS og Javascript
 
+HTML:
+
 #### Node - backend service.
