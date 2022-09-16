@@ -1,65 +1,67 @@
-# Engelsk-språklig applikasjon
-
 ## Behovsanalyse
 
+#### Ide-er
+
+corpse musikk (trommer)
+quiz
+lyd effekter
+fotball
+
+PC spill (minecraft, fortnite)
+Fortnite med hester og minecraft
+true eller false spill
+ninja spill (kunfu panda)
+
+Heste spill (quiz)
+- stackles
+- lyd effekter
+- aktiviteter
+- time limit
+- vanskelighets-grad
+- high-score
+- språk (google translate API)
+- fifa
+
 #### Hvilke utfordringer har brukeren?
+
+Brukeren har ikke nevnt noe med utfordringer som påvirker livet dems
+
 #### Hvilke interesser har brukeren?
 
-Brukeren har vanskelig for å lære seg språk, spesielt engelsk.
-Hun observerer at engelsk er et nyttig språk, som kommer igjen i mange sammenhenger.
-Brukeren liker spill og har konkurranse-instinkt. Motivasjonen øker når man ser fremgang i læringen, i form av poeng og økt mestringsfølelse.
+Det er 2 brukere som har forskjellige interesser. En gutt og jente.
+interessene til gutten er Fotball, PC spill som Fortnite og Minecraft.
+
+interessene til Jenten er korpse musikk som trommer liker å spille heste
+spill.
+
+Begge brukeren har et spill ide som skal være et heste spill basert
+på quiz. i quiz spillet, skal den inneholde lyd-effekter, aktiviteter,
+time-limit, vanskelighets-grad, high-score, oversetter (google translate API)
+og.
 
 ## Applikasjon
 
 #### Hva er applikasjonen?
 
-Applikasjonen er et TRUE-FALSE spill, som skal gi brukeren ett riktig svar og et feil svar.
-Brukeren starter med 0 poeng og får ett poeng for riktig svar.
-Når alle 10 spørsmålene er stilt, får man en poeng-Score, og gis muligheten til å starte igjen.
-Det skal være to måter å visualisere spørsmålet på:
+Applikasjonen skal være basert på et quiz spill. Det vil si, True\False
+spill. Brukeren får spørsmål om hester. Når brukeren får riktig på spørsmålet, spilles det en
+lyd-effekt som skiller seg fra en dårlig lyd-effekt. Det vil si at brukeren skal få følelse av å svart
+riktig og brukeren får poeng som går mot High-score, men vis brukeren får feil, så skjer det
+motsatte av lyd-effekter og poeng. I tilleg, har brukeren begrenset tid og må kjappe seg å bli
+ferdig med quiz-et. Vis tiden har kommet til slutten, så vil spillet allerede vise high-score til
+brukeren. Spillet skal også bruke API som skal oversette et spørsmål, slik at det er mer utfordrene.
+Til slutt har spillet vanskelighets-grad. Det skal gjøre spille mye mer vanskeligere ved å gi
+mindre tid og vanskeligere å forstå spørsmålet
 
-1. Et bilde. Hva er dette på engelsk? Deretter svaralternativer.
-2. Fortelle et ord på norsk, og deretter spørre hva det heter på engelsk.
-Her skal det være et tekstfelt, som brukeren skal skrive inn.
+1. Brukeren velger mellom vanskelighets-grad
+2. Spillet gir brukeren 2 eller flere spørsmål som er oversettet av Google og Tiden er begrenset av
+vanskelighets-grad.
+3. Brukeren svarer på et riktig spørsmål.
+4. Lyd-effekt spilles av og gir brukeren poeng.
+5. Etter quiz-et, viser spillet high-score til brukeren.
 
 ## Fremgangsmøte
 
-#### Database
-
-Skal lage en MYSQL - database som lagrer hvor mange poeng spilleren har etter endt spill.
-
-  Forslag til tabell 1 - Person:
-
-  | BrukerID       | Brukernavn    | Passord |
-  | -------------- |:-------------:| -------:|
-  | 1              | 20.08.1991    | 3       |
-
-  Forslag til tabell 2 - Spill:
-
-  | spillID        | Dato          | Poeng | Person |
-  | -------------- |:-------------:| -----:| -----: |
-  | 1              | 20.08.1991    | 3     | 1      |
-
-  Person-kolonnen i Spill - tabellen er en fremmednøkkel som skal fylles
-  på med primærnøkkelen fra Person-tabellen for hvert spill.
-  Person-tabellen skal brukes til innlogging.
-
 #### HTML, CSS og Javascript
 
-- Spillet trenger en innloggingsside, som kobler opp informasjon fra databasen
-med informasjonen i innloggingsfeltet.
-- Stylingen er "clean", med et stort bakgrunnsbilde på alle slides.
-- Spillet skal ha en velkommen side (start spillet-side) og start spillet-knapp.
-- Når man har svart, så kommer det opp at brukeren har tatt riktig eller feil.
-Spilleren blir "tvunget" med til neste spørsmål.
-- På Hver side skal det stå hvor langt spilleren har kommet i spillet.
-For eksempel 1/10 på først slide, 2/10 på andre slide.
-
 #### Node - backend service.
-
-- Trenger database-tilkobling, og kan både hente og oppdatere databasen.
-- Node kan brukes på to måter:
-1. Som backend service og API-calls.
-2. Som webserver.
-
-Dette har jeg ikke bestemt meg for enda.
