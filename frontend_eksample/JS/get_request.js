@@ -5,7 +5,7 @@ function getRequest() {
   //var sql = "SELECT * FROM elev WHERE Fornavn="+inputText+''
   //console.log(sql);
 
-  fetch('http://localhost:3306/')
+  fetch('http://localhost:3000/')
     .then((response) => response.json())
     .then((data) => console.log(data));
 }
