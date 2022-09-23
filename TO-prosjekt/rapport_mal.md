@@ -90,3 +90,4 @@ Start-spill
 
 Slutt-spill
 ![image](https://user-images.githubusercontent.com/111873484/191951077-660c8f63-f9c8-41a5-9b02-b66b58e6f33f.png)
+
