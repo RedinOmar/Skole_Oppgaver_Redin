@@ -64,6 +64,16 @@ vanskelighets-grad.
 
 #### HTML, CSS og Javascript
 
-HTML:
+HTML: HTML skal brukes for å lage strukturen til spillet.
+1. Det vil si start-siden til spillet som skal vise et meny
+2. på andre side, skal det værevanskelighetsgrad
+3. på tredje side, skal det når spillet har startet
+4. på siste side skal det være når spillet er ferdig og oppsumerer
 
-#### Node - backend service.
+CSS: CSS skal brukes for å pynte på spillet
+1. I alle spill generelt, skal det være farge og animasjoner, inkludert å modifisere alle sidene, slik
+at det skal se pent ut
+
+JavaScript: Javascript skal brukes for å gi spillet/programmet et oppgave som den skal utgjøre for brukeren.
+For eksempel. når brukeren får riktig og poeng på et spørsmål, så vil scriptet ta informasjonen som er poengene
+og lagre det i highscore.
