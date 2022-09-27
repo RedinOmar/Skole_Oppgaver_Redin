@@ -77,3 +77,17 @@ at det skal se pent ut
 JavaScript: Javascript skal brukes for å gi spillet/programmet et oppgave som den skal utgjøre for brukeren.
 For eksempel. når brukeren får riktig og poeng på et spørsmål, så vil scriptet ta informasjonen som er poengene
 og lagre det i highscore.
+
+#### Skisse
+Meny
+![image](https://user-images.githubusercontent.com/111873484/191949103-b18b64b9-c7ec-400c-a2f1-73a1708d0e1f.png)
+
+Vanskelighetsgrad
+![image](https://user-images.githubusercontent.com/111873484/191949767-0685ccd9-7d90-4721-b285-c9dfb0aae45f.png)
+
+Start-spill
+![image](https://user-images.githubusercontent.com/111873484/191950536-9a0c0ee3-7c3f-42d9-807f-376b2545c787.png)
+
+Slutt-spill
+![image](https://user-images.githubusercontent.com/111873484/191951077-660c8f63-f9c8-41a5-9b02-b66b58e6f33f.png)
+
