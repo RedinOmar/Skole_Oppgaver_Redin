@@ -1,0 +1,76 @@
+body {
+  height: 100vh;
+  margin: 0px;
+}
+
+div {
+  border: solid black 2px;
+  margin: 10px;
+}
+
+
+
+/* Meny */
+.game-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.start-button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+/* Meny */
+
+
+
+/*vanskelighets_grad */
+.dificulty-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/*vanskelighets_grad */
+
+
+
+/* start */
+.question-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.answer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+/* start */
+
+
+
+/* Slutt_spill */
+.end-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.high-score {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.again-stop {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+/* Slutt_spill */
