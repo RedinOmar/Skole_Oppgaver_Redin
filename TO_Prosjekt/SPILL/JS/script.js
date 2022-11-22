@@ -52,11 +52,20 @@ let questions = {
   ]
 }
 
-/* meny */
-document.getElementById("answer").style.display = "none";
-/* meny */
+function start() {
+    document.getElementById("start-button").style.display = "none";
+    document.getElementById('svar_1').innerHTML = questions.questions[0].answers[0];
+    document.getElementById('svar_2').innerHTML = questions.questions[0].answers[1];
+    document.getElementById('svar_3').innerHTML = questions.questions[0].answers[2];
+    document.getElementById('svar_4').innerHTML = questions.questions[0].answers[3];
+}
 
-let quiz = 0;
+let quiz = 1;
+
+document.getElementById('svar_1').innerHTML = questions.questions[quiz].answers[0];
+document.getElementById('svar_2').innerHTML = questions.questions[quiz].answers[1];
+document.getElementById('svar_3').innerHTML = questions.questions[quiz].answers[2];
+document.getElementById('svar_4').innerHTML = questions.questions[quiz].answers[3];
 
 function question() {
   document.getElementById('spørsmål').innerHTML = questions.questions[quiz].question;

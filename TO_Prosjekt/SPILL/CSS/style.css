@@ -3,8 +3,6 @@ body {
   margin: 0px;
 }
 
-
-
 /* Meny */
 .start_button {
   height: 40px;
@@ -15,15 +13,14 @@ body {
   border: none;
   transition: all 0.5s;
 }
+
 .start_button:hover {
   border: solid black 1px;
   background-color: #2EE59D;
   box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
 }
 
-
-
-.border {
+#border {
   min-height: 100vh;
   background-color: green;
   animation-name: border;
