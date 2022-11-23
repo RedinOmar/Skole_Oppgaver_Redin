@@ -52,30 +52,27 @@ let questions = {
   ]
 }
 
+let quiz = 0;
+let display_highscore = 0;
+
 function start() {
     document.getElementById("start-button").style.display = "none";
-    document.getElementById('svar_1').innerHTML = questions.questions[0].answers[0];
-    document.getElementById('svar_2').innerHTML = questions.questions[0].answers[1];
-    document.getElementById('svar_3').innerHTML = questions.questions[0].answers[2];
-    document.getElementById('svar_4').innerHTML = questions.questions[0].answers[3];
-}
+    document.getElementById('spørsmål').innerHTML = questions.questions[quiz].question;
+    document.getElementById('theme').innerHTML = "tema: hest"
+    document.getElementById('svar_1').innerHTML = questions.questions[quiz].answers[0];
+    document.getElementById('svar_2').innerHTML = questions.questions[quiz].answers[1];
+    document.getElementById('svar_3').innerHTML = questions.questions[quiz].answers[2];
+    document.getElementById('svar_4').innerHTML = questions.questions[quiz].answers[3];
+    display_highscore = document.getElementById('highscore').innerHTML = display_highscore;
+};
 
-let quiz = 1;
-
-document.getElementById('svar_1').innerHTML = questions.questions[quiz].answers[0];
-document.getElementById('svar_2').innerHTML = questions.questions[quiz].answers[1];
-document.getElementById('svar_3').innerHTML = questions.questions[quiz].answers[2];
-document.getElementById('svar_4').innerHTML = questions.questions[quiz].answers[3];
-
-function question() {
-  document.getElementById('spørsmål').innerHTML = questions.questions[quiz].question;
-}
-
-function answer() {
-  document.getElementById('svar_1').innerHTML = questions.questions[quiz].answers[0];
-  document.getElementById('svar_2').innerHTML = questions.questions[quiz].answers[1];
-  document.getElementById('svar_3').innerHTML = questions.questions[quiz].answers[2];
-  document.getElementById('svar_4').innerHTML = questions.questions[quiz].answers[3];
+function answer(button) {
+  let correct = questions.questions[quiz].correctIndex;
+  if (correct === button) {
+    quiz++
+    display_highscore++
+    start()
+  }
 }
 
 
@@ -84,9 +81,9 @@ function answer() {
 /* slutt spill */
 function tryagain() {
   location.href = 'Start.html';
-}
+};
 
 function stop() {
   location.href = 'meny.html';
-}
+};
 /* slutt spill */

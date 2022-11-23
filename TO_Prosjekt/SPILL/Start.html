@@ -9,19 +9,25 @@
   <body>
     <div id="border">
       <div class="question-title">
-        <h1 id="spørsmål" class="question" onclick="question()"> d  <h1>
-        <h2 class="theme"> Tema: hest <h2>
+        <h1 id="spørsmål" class="question"><h1>
+        <h2 id="theme"><h2>
       </div>
       <div class="start-button" id="start-button">
         <button class="start_button" onclick="start()"> Skal vi starte spillet? </button>
       </div>
       <div id="answer">
-        <button type="button" id="svar_1" class="answer_button" onclick="answer()"></button>
-        <button type="button" id="svar_2" class="answer_button_2" onclick="answer()"></button>
+        <button type="button" id="svar_1" class="answer_button" onclick="answer(0)"></button>
+        <button type="button" id="svar_2" class="answer_button_2" onclick="answer(1)"></button>
       </div>
+
+      <div id="highscore-box">
+        <p> Din poeng </p>
+        <p id="highscore"> </p>
+      </div>
+
       <div id="answer">
-        <button type="button" id="svar_3" class="answer_button_3" onclick="answer()"></button>
-        <button type="button" id="svar_4" class="answer_button_4" onclick="answer()"></button>
+        <button type="button" id="svar_3" class="answer_button_3" onclick="answer(2)"></button>
+        <button type="button" id="svar_4" class="answer_button_4" onclick="answer(3)"></button>
       </div>
     </div>
   </body>
