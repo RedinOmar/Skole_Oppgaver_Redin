@@ -1,9 +1,3 @@
-/* Meny */
-/* Meny */
-
-
-
-/* start spill */
 let questions = {
   "questions": [
   { "question": "What is the scientific name of a butterfly?",
@@ -63,6 +57,13 @@ function start() {
     document.getElementById("start-button").style.display = "none";
     document.getElementById('theme').innerHTML = "Tema: Hest";
     document.getElementById('question_title').innerHTML = questions.questions[quiz].question;
+
+    document.getElementById('svar_1').style.visibility = "visible";
+    document.getElementById('svar_2').style.visibility = "visible";
+    document.getElementById('svar_3').style.visibility = "visible";
+    document.getElementById('svar_4').style.visibility = "visible";
+    document.getElementById('highscore_text').style.visibility = "visible";
+
     document.getElementById('svar_1').innerHTML = questions.questions[quiz].answers[0];
     document.getElementById('svar_2').innerHTML = questions.questions[quiz].answers[1];
     document.getElementById('svar_3').innerHTML = questions.questions[quiz].answers[2];
@@ -78,26 +79,26 @@ function answer(button) {
     start()
   } else  {
     quiz++
+    display_highscore--
     start()
-  } if (quiz >= 11) {
-    document.getElementById('theme').style.display = "none";
+  }
+  if (quiz >= 11) {
     document.getElementById('question_title').style.display = "none";
+    document.getElementById('theme').style.display = "none";
     document.getElementById('svar_1').style.display = "none";
     document.getElementById('svar_2').style.display = "none";
     document.getElementById('svar_3').style.display = "none";
     document.getElementById('svar_4').style.display = "none";
+
+    document.getElementById('try_again').style.visibility = "visible";
+    document.getElementById('stop_game').style.visibility = "visible";
   }
 }
-/* start spill */
 
+function try_again() {
+  start()
+}
 
-
-/* slutt spill */
-function tryagain() {
-  location.href = 'Start.html';
-};
-
-function stop() {
-  location.href = 'meny.html';
-};
-/* slutt spill */
+function stop_game() {
+  start()
+}

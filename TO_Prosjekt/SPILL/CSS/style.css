@@ -5,6 +5,8 @@ body {
 
 /* Meny */
 .start_button {
+  position: absolute;
+  bottom: 50%;
   height: 40px;
   width: 140px;
   border-radius: 10px;
@@ -21,14 +23,7 @@ body {
 
 #border {
   position: relative;
-}
-
-.start-button {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-around;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 #img {
@@ -38,6 +33,11 @@ body {
   position: absolute;
   align-items: center;
 }
+
+.start-button {
+  display: flex;
+  justify-content: center;
+}
 /* Meny */
 
 
@@ -46,10 +46,26 @@ body {
 .question-title {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
+  text-align: center;
+}
+
+#question_title {
+  background-color: green;
+  opacity: 85%;
+  margin-bottom: 0px;
+}
+
+#theme {
+  background-color: green;
+  opacity: 85%;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 
 #answer {
+  visibility: hidden;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -74,58 +90,63 @@ body {
 
 #highscore-box {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: center;
+}
+
+#highscore_text {
+  visibility: hidden;
+  background-color: green;
+  opacity: 85%;
+  font-size: 32px;
+}
+
+#highscore_box {
+  background-color: green;
+  opacity: 85%;
+  font-size: 32px;
 }
 /* start */
 
 
 
 /* Slutt_spill */
-.end-title {
+#end-game {
   display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
-.high-score {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.again-stop {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-around;
-}
-
-.try-again {
-  height: 40px;
-  width: 140px;
+#try_again {
+  visibility: hidden;
+  position: absolute;
+  top: 75%;
+  right: 100px;
+  height: 60px;
+  width: 175px;
   border-radius: 10px;
   box-shadow: 0px 8px 15px rgba(0, 0, 0, 1);
   cursor: pointer;
   border: none;
   transition: all 0.5s;
 }
-.try-again:hover {
+#try_again:hover {
   border: solid black 1px;
   background-color: #2EE59D;
   box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
 }
 
-.stop {
-  height: 40px;
-  width: 140px;
+#stop_game {
+  visibility: hidden;
+  position: absolute;
+  top: 75%;
+  left: 100px;
+  height: 60px;
+  width: 175px;
   border-radius: 10px;
   box-shadow: 0px 8px 15px rgba(0, 0, 0, 1);
   cursor: pointer;
   border: none;
   transition: all 0.5s;
 }
-.stop:hover {
+#stop_game:hover {
   border: solid black 1px;
   background-color: #2EE59D;
   box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
