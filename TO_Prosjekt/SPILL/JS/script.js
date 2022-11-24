@@ -1,5 +1,9 @@
-/* start spill */
+/* Meny */
+/* Meny */
 
+
+
+/* start spill */
 let questions = {
   "questions": [
   { "question": "What is the scientific name of a butterfly?",
@@ -57,13 +61,13 @@ let display_highscore = 0;
 
 function start() {
     document.getElementById("start-button").style.display = "none";
-    document.getElementById('spørsmål').innerHTML = questions.questions[quiz].question;
-    document.getElementById('theme').innerHTML = "tema: hest"
+    document.getElementById('theme').innerHTML = "Tema: Hest";
+    document.getElementById('question_title').innerHTML = questions.questions[quiz].question;
     document.getElementById('svar_1').innerHTML = questions.questions[quiz].answers[0];
     document.getElementById('svar_2').innerHTML = questions.questions[quiz].answers[1];
     document.getElementById('svar_3').innerHTML = questions.questions[quiz].answers[2];
     document.getElementById('svar_4').innerHTML = questions.questions[quiz].answers[3];
-    display_highscore = document.getElementById('highscore').innerHTML = display_highscore;
+    display_highscore = document.getElementById('highscore_box').innerHTML = display_highscore;
 };
 
 function answer(button) {
@@ -72,11 +76,21 @@ function answer(button) {
     quiz++
     display_highscore++
     start()
+  } else  {
+    quiz++
+    start()
+  } if (quiz >= 11) {
+    document.getElementById('theme').style.display = "none";
+    document.getElementById('question_title').style.display = "none";
+    document.getElementById('svar_1').style.display = "none";
+    document.getElementById('svar_2').style.display = "none";
+    document.getElementById('svar_3').style.display = "none";
+    document.getElementById('svar_4').style.display = "none";
   }
 }
-
-
 /* start spill */
+
+
 
 /* slutt spill */
 function tryagain() {

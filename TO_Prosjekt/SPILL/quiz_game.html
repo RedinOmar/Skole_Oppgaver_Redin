@@ -2,33 +2,39 @@
 <html lang="no" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title> Start </title>
+    <title> Quiz game </title>
     <link rel="stylesheet" href="CSS/style.css">
     <script src="JS/script.js"> </script>
   </head>
   <body>
     <div id="border">
+
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Fjording%2C_mother_and_daughter.jpg/375px-Fjording%2C_mother_and_daughter.jpg" id="img">
+
       <div class="question-title">
-        <h1 id="spørsmål" class="question"><h1>
+        <h1 id="question_title"><h1>
         <h2 id="theme"><h2>
       </div>
+
       <div class="start-button" id="start-button">
         <button class="start_button" onclick="start()"> Skal vi starte spillet? </button>
       </div>
+
       <div id="answer">
         <button type="button" id="svar_1" class="answer_button" onclick="answer(0)"></button>
-        <button type="button" id="svar_2" class="answer_button_2" onclick="answer(1)"></button>
+        <button type="button" id="svar_2" class="answer_button" onclick="answer(1)"></button>
       </div>
 
       <div id="highscore-box">
         <p> Din poeng </p>
-        <p id="highscore"> </p>
+        <p id="highscore_box"> </p>
       </div>
 
       <div id="answer">
-        <button type="button" id="svar_3" class="answer_button_3" onclick="answer(2)"></button>
-        <button type="button" id="svar_4" class="answer_button_4" onclick="answer(3)"></button>
+        <button type="button" id="svar_3" class="answer_button" onclick="answer(2)"></button>
+        <button type="button" id="svar_4" class="answer_button" onclick="answer(3)"></button>
       </div>
+
     </div>
   </body>
 </html>
