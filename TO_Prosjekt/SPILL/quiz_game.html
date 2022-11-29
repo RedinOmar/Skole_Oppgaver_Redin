@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title> Quiz game </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS/style.css">
     <script src="JS/script.js"> </script>
   </head>
@@ -12,25 +13,25 @@
       <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Fjording%2C_mother_and_daughter.jpg/375px-Fjording%2C_mother_and_daughter.jpg" id="img">
 
       <div class="question-title">
-        <h1 id="question_title"> Velkommen til quiz game! <h1>
-        <h2 id="theme">
+        <p id="question_title"> Velkommen til quiz game! </p>
+        <p id="theme">
           I dette spillet, får du noen spørsmål om temaet hester. Det er fire svar alternativer og bare en av dem er riktig.
           For vært riktig svar, får du 1 poeng, men vis du feiler svaret, så mister du 1 poeng. Lykke til med quizet :)
-        <h2>
+        </p>
       </div>
 
       <div class="start-button" id="start-button">
         <button class="start_button" onclick="start()"> Skal vi starte spillet? </button>
       </div>
 
-      <div id="answer">
-        <button type="button" id="svar_1" class="answer_button" onclick="answer(0)"></button>
-        <button type="button" id="svar_2" class="answer_button" onclick="answer(1)"></button>
-      </div>
-
       <div id="highscore-box">
         <p id="highscore_text"> Dine antall poeng: </p>
         <p id="highscore_box"></p>
+      </div>
+
+      <div id="answer">
+        <button type="button" id="svar_1" class="answer_button" onclick="answer(0)"></button>
+        <button type="button" id="svar_2" class="answer_button" onclick="answer(1)"></button>
       </div>
 
       <div id="answer">

@@ -1,12 +1,12 @@
 let questions = {
   "questions": [
-  { "question": "What is the scientific name of a butterfly?",
-  "answers": [ "Apis", "Coleoptera", "Formicidae", "Rhopalocera" ],
-  "correctIndex": 3 },
-
-  { "question": "How hot is the surface of the sun?",
-  "answers": [ "1,233 K", "5,778 K", "12,130 K", "101,300 K" ],
+  { "question": "Kan hester bli farge blinde?",
+  "answers": [ "Hester er fargeblind", "Noen hester kan bli fargeblind", "Hester er ikke fargeblind", "Det er Umulig" ],
   "correctIndex": 1 },
+
+  { "question": "Hvilket gruppe tilhører artene hestene til?",
+  "answers": [ "Frøplanter", "Virveldyr", "Krypdyr", "Pattedyr" ],
+  "correctIndex": 3 },
 
   { "question": "Who are the actors in The Internship?",
   "answers": [ "Ben Stiller, Jonah Hill", "Courteney Cox, Matt LeBlanc", "Kaley Cuoco, Jim Parsons", "Vince Vaughn, Owen Wilson" ],
@@ -90,15 +90,30 @@ function answer(button) {
     document.getElementById('svar_3').style.display = "none";
     document.getElementById('svar_4').style.display = "none";
 
+    document.getElementById('try_again').style.display = "";
+    document.getElementById('stop_game').style.display = "";
+
     document.getElementById('try_again').style.visibility = "visible";
     document.getElementById('stop_game').style.visibility = "visible";
+
   }
 }
 
 function try_again() {
+  display_highscore = 0;
+  quiz = 0;
+  document.getElementById('try_again').style.display = "none";
+  document.getElementById('stop_game').style.display = "none";
+
+  document.getElementById('question_title').style.display = "";
+  document.getElementById('theme').style.display = "";
+  document.getElementById('svar_1').style.display = "";
+  document.getElementById('svar_2').style.display = "";
+  document.getElementById('svar_3').style.display = "";
+  document.getElementById('svar_4').style.display = "";
   start()
 }
 
 function stop_game() {
-  start()
+  location.href = 'quiz_game.html';
 }
