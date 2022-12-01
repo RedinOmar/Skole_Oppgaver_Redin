@@ -115,12 +115,12 @@ body {
 
 /* Slutt_spill */
 #end-game {
-  display: flex, none;
-  justify-content: space-around;
+  display: none;
 }
 
 #try_again {
-  visibility: hidden;
+  position: absolute;
+  right: 25%;
   height: 60px;
   width: 175px;
   border-radius: 10px;
@@ -136,7 +136,8 @@ body {
 }
 
 #stop_game {
-  visibility: hidden;
+  position: absolute;
+  left: 25%;
   height: 60px;
   width: 175px;
   border-radius: 10px;
@@ -152,6 +153,8 @@ body {
 }
 /* Slutt_spill */
 
+
+
 @media only screen and (max-width: 800px) {
   body {
     overflow-y: visible;
@@ -159,5 +162,21 @@ body {
 
   #answer {
     flex-direction: column;
+  }
+
+  #try_again {
+    top: 25%;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #stop_game {
+    bottom: 50%;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
