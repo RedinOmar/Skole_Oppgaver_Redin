@@ -90,12 +90,11 @@ function answer(button) {
     document.getElementById('svar_3').style.display = "none";
     document.getElementById('svar_4').style.display = "none";
 
-    document.getElementById('try_again').style.display = "";
-    document.getElementById('stop_game').style.display = "";
+    document.getElementById('end-game').style.display = "";
+    document.getElementById('end-game').style.display = "flex";
 
     document.getElementById('try_again').style.visibility = "visible";
     document.getElementById('stop_game').style.visibility = "visible";
-
   }
 }
 
