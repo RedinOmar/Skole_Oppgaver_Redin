@@ -108,5 +108,5 @@ function try_again() {
 }
 
 function stop_game() {
-  location.href = 'quiz_game.html';
+  location.href = 'index.html';
 }
