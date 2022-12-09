@@ -9,7 +9,7 @@ let questions = {
   "correctIndex": 3 },
 
   { "question": "Hva er forventet levealderen til Hester?",
-  "answers": [ " 19-27, 42-50, 25-30, 31-35" ],
+  "answers": [ "19-27", "42-50", "25-30", "31-35" ],
   "correctIndex": 2 },
 
   { "question": "I 2010, satt en hest ny rekord på å være den høyeste. Hvor høy var hesten?",
@@ -36,19 +36,11 @@ let questions = {
   "answers": [ "Mer enn 90 grader", " Mer enn 180 grader", "270 grader", "Nesten 360 grader" ],
   "correctIndex": 3 },
 
-  { "question": "How tall is Mount Everest?",
-  "answers": [ "6,683 ft (2,037 m)", "7,918 ft (2,413 m)", "19,341 ft (5,895 m)", "29,029 ft (8,847 m)" ],
-  "correctIndex": 3 },
-
-  { "question": "When did The Avengers come out?",
-  "answers": [ "May 2, 2008", "May 4, 2012", "May 3, 2013", "April 4, 2014" ],
-  "correctIndex": 1 },
-
-  { "question": "What is 48,879 in hexidecimal?",
-  "answers": [ "0x18C1", "0xBEEF", "0xDEAD", "0x12D591" ],
-  "correctIndex": 1 }
+  { "question": "Hva gjør hester hvis de skjeder seg?",
+  "answers": [ "Gjør ingenting", "Spiser gress", "Finner objekter som de kan leke med", "Sover" ],
+  "correctIndex": 2 }
   ]
-}
+};
 
 let quiz = 0;
 let display_highscore = 0;
@@ -73,16 +65,7 @@ function start() {
 
 function answer(button) {
   let correct = questions.questions[quiz].correctIndex;
-  if (correct === button) {
-    quiz++
-    display_highscore++
-    start()
-  } else  {
-    quiz++
-    display_highscore--
-    start()
-  }
-  if (quiz >= 11) {
+  if (quiz >= 9) {
     document.getElementById('question_title').style.display = "none";
     document.getElementById('theme').style.display = "none";
     document.getElementById('svar_1').style.display = "none";
@@ -91,6 +74,14 @@ function answer(button) {
     document.getElementById('svar_4').style.display = "none";
     document.getElementById('end-game').style.display = "";
     document.getElementById('end-game').style.display = "flex";
+  } else if (correct === button) {
+    quiz++;
+    display_highscore++;
+    start(quiz);
+  } else  {
+    quiz++;
+    display_highscore--;
+    start(quiz);
   }
 }
 

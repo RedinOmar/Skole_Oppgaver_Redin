@@ -154,7 +154,7 @@ body {
 /* Slutt_spill */
 
 
-
+/* mobil format */
 @media only screen and (max-width: 800px) {
   body {
     overflow-y: visible;
@@ -180,3 +180,62 @@ body {
     margin-right: auto;
   }
 }
+
+@media only screen and (max-width: 700px) {
+  #question_title {
+    font-size: 35px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #question_title {
+    font-size: 30px;
+  }
+
+  #theme {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  #question_title {
+    font-size: 25px;
+  }
+
+  #theme {
+    font-size: 15px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  #question_title {
+    font-size: 20px;
+  }
+
+  #theme {
+    font-size: 10px;
+  }
+
+  .answer_button {
+    width: 300px;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  #question_title {
+    font-size: 15px;
+  }
+
+  #theme {
+    font-size: 10px;
+  }
+
+  .answer_button {
+    width: 250px;
+  }
+
+  #highscore_text {
+    font-size: 30px;
+  }
+}
+/* mobil format */
