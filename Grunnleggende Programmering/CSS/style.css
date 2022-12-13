@@ -1,0 +1,14 @@
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  animation: index 3s infinite;
+}
+
+@keyframes index {
+  from {background-image: linear-gradient(red, yellow, blue);}
+  50% {background-image: linear-gradient(blue, orange, green);}
+  to {background-image: linear-gradient(red, yellow, blue);}
+}
