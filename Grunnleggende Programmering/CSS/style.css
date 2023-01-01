@@ -12,3 +12,17 @@ body {
   50% {background-image: linear-gradient(blue, orange, green);}
   to {background-image: linear-gradient(red, yellow, blue);}
 }
+
+.lengdeogbredde {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.numbers {
+  display: flex;
+}
+
+.button-div {
+  display: flex;
+}

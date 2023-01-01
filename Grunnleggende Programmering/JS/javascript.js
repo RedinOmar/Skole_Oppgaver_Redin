@@ -41,3 +41,38 @@ function trekant() {
   document.getElementById('trekant-value').innerHTML = "Arealet til trekant er" + " " + trekant2;
   console.log(trekant2);
 }
+
+/* C */
+function rectanglebutton(lengde, bredde) {
+  lengde = document.getElementById('lengde').value;
+  bredde = document.getElementById('bredde').value;
+  document.getElementById('rektangelvalue').innerHTML = "arealet til rektagelen er: " + lengde * bredde;
+}
+
+function trekantbutton(lengde, bredde) {
+  lengde = document.getElementById('lengde').value;
+  bredde = document.getElementById('bredde').value;
+  document.getElementById('trekantvalue').innerHTML = "arealet til trekanten er: " + lengde * bredde / 2;
+}
+
+/* Oppgave 3 */
+/* A */
+/* Måten input funker på python, er at det gir brukeren mulighet for å skrive inn hvilket som helst verdi inni inputten.
+vis jeg for eksempel skriver navnet mitt i et input, så vil verdien være oppdatert til navnet mitt i innputten.*/
+
+/* B */
+function values(lang_value_retriever) {
+  var lang_value = window.prompt('skriv et bokstav');
+  if (lang_value != null && n) {
+    document.getElementById('lang_retriever').innerHTML = "Du er Norsk ";
+  }
+  else if (lang_value != null || s) {
+    document.getElementById('lang_retriever').innerHTML = "Du er Svensk ";
+  }
+  else if (lang_value != null || d) {
+    document.getElementById('lang_retriever').innerHTML = "Du er Dansk ";
+  }
+  else {
+    document.getElementById('lang_retriever').innerHTML = "Du har ikke skrevet noe ";
+  }
+};

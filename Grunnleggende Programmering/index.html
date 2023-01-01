@@ -12,8 +12,38 @@
     <button type="button" onclick="kvadrat()"> Regn ut arealet til rektangelen </button>
     <div id="kvadrat-value"> </div>
 <br>
+
     <!-- B -->
-    <button type="button" onclick="trekant()"> Regn ut arealet til rektangelen </button>
+    <button type="button" onclick="trekant()"> Regn ut arealet til trekant </button>
     <div id="trekant-value"> </div>
+
+<br>
+
+    <!-- C -->
+    <div class="numbers">
+      <input type="number" id="lengde" name="" placeholder="lengde">
+      <label> * </label>
+      <input type="number" id="bredde" name="" placeholder="bredde">
+    </div>
+
+<br>
+
+    <div class="button-div">
+      <div class="buttons">
+        <input type="button" onclick="rectanglebutton()" value="regn ut rektangel">
+        <p id="rektangelvalue"></p>
+      </div>
+      <div class="buttons">
+        <input type="button" onclick="trekantbutton()" value="regn ut trekant">
+        <p id="trekantvalue"></p>
+      </div>
+    </div>
+
+    <div class="lang-div">
+      <input type="text" id="lang_input" Placeholder="skriv et bokstav">
+      <input type="button" onclick="values()" value="Identifiser deg selv">
+      <p id="lang_retriever"></p>
+    </div>
+
   </body>
 </html>
