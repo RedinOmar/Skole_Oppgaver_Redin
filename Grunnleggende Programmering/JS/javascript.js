@@ -62,14 +62,14 @@ vis jeg for eksempel skriver navnet mitt i et input, så vil verdien være oppda
 
 /* B */
 function values(lang_value_retriever) {
-  var lang_value = window.prompt('skriv et bokstav');
-  if (lang_value != null && n) {
+  lang_value_retriever = document.getElementById('lang_input').value;
+  if (lang_value_retriever === "n") {
     document.getElementById('lang_retriever').innerHTML = "Du er Norsk ";
   }
-  else if (lang_value != null || s) {
+  else if (lang_value_retriever === "s") {
     document.getElementById('lang_retriever').innerHTML = "Du er Svensk ";
   }
-  else if (lang_value != null || d) {
+  else if (lang_value_retriever === "d") {
     document.getElementById('lang_retriever').innerHTML = "Du er Dansk ";
   }
   else {
