@@ -7,5 +7,14 @@
     <title></title>
   </head>
   <body>
+    <div id="alder">
+      <script> document.getElementById('alder').innerHTML = "Hei, " + dinalderValue.navn + "! " + "Du er " + alder + " " +"år gammel."; </script>
+    </div>
+    <br>
+    <input type="text" id="name" placeholder="Navn">
+    <input type="number" id="age" placeholder="fødselsår">
+    <input type="submit" onclick="calculateAge()" value="Vis navn og alderen din">
+    <br>
+    <p id="nameAndage"></p>
   </body>
 </html>
