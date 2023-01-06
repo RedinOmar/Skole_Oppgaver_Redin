@@ -7,14 +7,12 @@
     <title></title>
   </head>
   <body>
-    <div id="alder">
-      <script> document.getElementById('alder').innerHTML = "Hei, " + dinalderValue.navn + "! " + "Du er " + alder + " " +"år gammel."; </script>
-    </div>
-    <br>
+    <button onclick="ola()"> vis hvor gammel Oda er </button>
+    <p id="visOla"></p>
+
     <input type="text" id="name" placeholder="Navn">
-    <input type="number" id="age" placeholder="fødselsår">
-    <input type="submit" onclick="calculateAge()" value="Vis navn og alderen din">
-    <br>
-    <p id="nameAndage"></p>
+    <input type="number" id="birthdate" placeholder="Fødselsdato">
+    <input type="submit" onclick="input()" value="Vis navnet og alderen din">
+    <p id="visPerson"></p>
   </body>
 </html>

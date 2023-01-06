@@ -56,38 +56,35 @@ console.log(volum_av_sylinder);
 
 // Oppgave 4.03 a, b, c
 class dinalder {
-  constructor(navn, fødselsår, kalender) {
+  constructor(navn, birthdate, calender) {
     this.navn = navn;
-    this.fødselsår = fødselsår;
-    this.kalender = kalender;
+    this.birthdate = birthdate;
   }
-  finnalder() {
-    return Math.abs(this.kalender - this.fødselsår);
+  finnAlder() {
+    let calender = new Date(2022);
+    return Math.abs(calender - this.birthdate);
   }
 }
-let dinalderValue = new dinalder("Ola", 2000, 2022);
-let alder = dinalderValue.finnalder();
+let dinalderValue = new dinalder("Ola", 2000);
+let alder = dinalderValue.finnAlder();
 console.log(alder);
 
+function ola() {
+  document.getElementById('visOla').innerHTML = "Hei, " + dinalderValue.navn + "! " + "Du er " + alder + " år gammel."
+};
 
-
-
-
-class inputAlder {
-  constructor(nameValue, fødselsårValue, kalenderValue) {
-    this.nameValue = nameValue;
-    this.fødselsårValue = fødselsårValue;
-    this.kalenderValue = kalenderValue;
-  }
-  calculateAge(nameInput, ageInput) {
-    nameInput = document.getElementById('name').value;
-    ageInput = document.getElementById('age').value;
-    this.nameValue = nameInput;
-    this.fødselsårValue = ageInput;
-    return Math.abs(this.nameValue - this.fødselsårValue);
-    document.getElementById('nameAndage').innerHTML = age.nameValue + ageValue;
-  }
+// oppgave d
+function input() {
+  let inputValue = new dinalder(
+    document.getElementById('name').value,
+    document.getElementById('birthdate').value
+  );
+  let age = inputValue.finnAlder();
+  document.getElementById('visPerson').innerHTML = "Du heter " + document.getElementById('name').value + " og du er " + document.getElementById('birthdate').value + " år gammel.";
 }
-let age = new inputAlder(this.nameValue, this.fødselsårValue, 2022);
-let ageValue = age.calculateAge();
-console.log(ageValue);
+
+
+
+
+
+// oppgave 4.06
