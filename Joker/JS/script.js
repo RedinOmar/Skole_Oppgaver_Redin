@@ -1,8 +1,8 @@
 class joker {
   constructor(randomNumber) {
-    this.randomNumber = Math.floor(Math.random() * 10);
+    this.randomNumber = randomNumber;
   }
-  buttonStart() {
-    document.getElementById('IDMiddle').innerHTML = this.randomNumber;
+  buttonstart() {
+    this.randomNumber = Math.floor(Math.random() * 11);
   }
 }
