@@ -1,26 +1,41 @@
+import VerticalTabs from "./src/VerticalTabs.svelte";
 import { describe, expect, test } from "vitest";
-import VerticalTabs from "./VerticalTabs.svelte";
-import { render, screen } from '@testing-library/svelte';
+import { fireEvent, render, screen } from '@testing-library/svelte';
 
 describe("VerticalTabs Component", () => {
-    // Create a new container for the test
-    const host = document.createElement('div');
 
-    // Append the new container in the HTML body
-    document.body.appendChild(host);
+    test("Should render the component", () => {
 
-    // Create instance of the vertical tab
-    const instance = new VerticalTabs({ target: host });
+        // lager en konteiner i HTML body
+        const host = document.createElement('div');
 
-    // Chech if the instance has value
-    expect(instance).toBeTruthy()
+        //
+        document.body.appendChild(host);
 
-    // test if we can find the "First Tab Heading"
-    expect(host.innerHTML).toContain("First Tab Heading")
-    
-    test("should render the component", () => {
+        // lager en ny instance som har verdien på objektet, host
+        const instance = new VerticalTabs({ target: host });
+
+        // skjekker om objektet (instance) har en verdi
+        expect(instance).toBeTruthy()
+
+        // tester om den finner "First Tab heading"
+        expect(host.innerHTML).toContain("First Tab Heading")
+
         render(VerticalTabs);
-        const firstTabNode = screen.getByText(/First tab Heading/i)
+
+        // getbytext returnerer instance av et gitt text (verdi)
+        const firstTabNode= screen.getByText(/First Tab Heading/i)
         expect(firstTabNode).toBeTruthy()
     });
-});
+
+    test("Should switch tabs", async () => {
+        render(VerticalTabs);
+
+        const secondTabElement = screen.getByText(/Second Tab/i);
+        
+        // fireEvent simulerer en click element
+        fireEvent.click(secondTabElement)
+
+        await screen.findByText(/Second tab Heading/i);
+    });
+})
