@@ -4,7 +4,7 @@ import ConfettiExplosion from "react-confetti-explosion";
 
 import './App.css';
 
-function App() {
+export default function App() {
 
   const [currentTime, setCurrentTime] = useState(10);
   const [isExploding, setIsExploding] = useState(false);
@@ -22,7 +22,7 @@ function App() {
     }, 1000);
     return () => clearInterval(interval);
   } )
-
+  
   return (
     <div className="App">
       <header className="App-header">
@@ -32,5 +32,3 @@ function App() {
     </div>
   );
 }
-
-export default App;
