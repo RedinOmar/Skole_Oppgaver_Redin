@@ -1,0 +1,55 @@
+body {
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+div {
+    border: solid black 1px;
+    margin: 10px;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+}
+
+.box-login {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#font {
+    font-size: 2em;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 25vh;
+    width: 25vw;
+}
+
+.user-login {
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+}
+
+#button-login {
+    height: 50px;
+    width: 100px;
+    background-color: white;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 15px;
+    transition-duration: 0.6s;
+}
+#button-login:hover {
+    box-shadow: 10px 10px 8px 1px rgba(0, 255, 0, .5);
+    background-color: green;
+    color: white;
+}
