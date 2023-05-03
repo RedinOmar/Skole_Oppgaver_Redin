@@ -2,11 +2,8 @@ const express = require('express')
 const app = express()
 const port = 3000
 const con = require('./db_Connection.js');
-var SimpleCrypto = require("simple-crypto-js").default
 var cors = require('cors')
 
-app.use(express.json());       
-app.use(express.urlencoded({extended: true})); 
 app.use(cors())
 
 app.get('/', (req, res) => {
